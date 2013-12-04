@@ -1,10 +1,13 @@
 <h1>This is the placeholder for the show page</h1>
 
-<p>Full name: <%= @user.full_name.inspect %></p>
+<p>Student Name : <%= @user.full_name %></p>
 
-<p>First name: <%= @user.first_name %></p>
+
+<p>Bio : <%= "#{@user.description}" %></p>
+
+<!-- <p>First name: <%= @user.first_name %></p>
 <p>Last name: <%= @user.last_name %></p>
-
+ -->
 <%= image_tag(@user.picture_url, :width => 200)  %>
 
 <p><%= link_to 'home', root_path %></p>
